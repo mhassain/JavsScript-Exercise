@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exercise-4</title>
+  </head>
+  <body>
+    <h1>
+      Exercise-4: Returns a passed string with letters in alphabetical order
+    </h1>
+    <p>
+      Write a JavaScript function that returns a passed string with letters in
+      alphabetical order.<br />
+      Example string: 'webmaster' <br />
+      Expected Output: 'abeemrstw'
+    </p>
+    <div>
+      <h3>Result:-</h3>
+      <p id="result"></p>
+    </div>
+    <script>
+      function alphabet_order(str) {
+        //str += "";
+        return str
+          .split("")
+          .sort()
+          .join("");
+      }
+
+      //console.log(alphabet_order("webmaster"));
+      let result = alphabet_order("webmaster");
+      document.getElementById("result").innerHTML = result;
+    </script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
